@@ -1,0 +1,69 @@
+.intro-katalog
+    display: flex
+    background-color: #F1F2F4
+
+
+    &__title
+        margin: auto
+        width: 730px
+        height: 260px
+        display: flex
+        justify-content: space-between
+
+
+    &__info
+        padding: 62px 0
+
+
+    &__list
+        width: 337px
+        list-style: none
+        display: flex
+        justify-content: space-between
+
+
+    &__tittle a
+        color: #727A82
+        font-weight: 500
+        font-size: 18px
+        text-decoration: none
+
+
+    &__tittle::after
+        content: "/"
+        padding: 0 10px
+
+
+    &__color a
+        color: black
+
+
+    &__color::after
+        content: none
+
+
+    &__h1
+        padding-top: 39px
+        font-weight: 700
+        font-size: 32px
+
+
+    &__picture
+        display: grid
+        grid-template-columns: 30px 97px 232px
+        grid-template-rows: repeat(2, 125px)
+
+
+    &__diagonal-small
+        grid-column: 1/2
+        grid-row-start: 2
+
+
+    &__diagonal-big
+        grid-column: 3/4
+        grid-row-start: 1
+
+
+    &__image
+        grid-column-start: 2
+        z-index: 1

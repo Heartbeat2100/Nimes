@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Профиль пользователя</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__conteiner">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li><a class="header__items" href="#">Women</a></li>
+                        <li><a class="header__items" href="#">Men</a></li>
+                        <li><a class="header__items" href="#">New</a></li>
+                    </ul>
+                </nav>
+                <a href="/docs/index.html">
+                <img class="header__logo" src="/img/logo.png" alt="Nimes" />
+                </a>
+                <div class="header__imag">
+                    <a class="header__user" href="">User</a>
+                    <a href="#" class="header__items-img">
+                        <img src="/img/search.svg" alt=""
+                    /></a>
+                    <a href="#" class="header__items-img">
+                        <img src="/img/cart.svg" alt=""
+                    /></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="profile">
+                <img src="/img/Depp.jpg" alt="#" class="profile__photo" />
+                <div action="" class="profile__list">
+                    <div class="profile__history">
+                        <h2>History</h2>
+                        <table class="profile__table" width="100%">
+                            <tr class="profile__table-row">
+                                <td lass="profile__table-data">28.02.1990</td>
+                                <td>Jacket</td>
+                                <td>1</td>
+                                <td><strong>$60</strong></td>
+                            </tr>
+
+                            <tr class="profile__table-row">
+                                <td lass="profile__table-data">15.07.2002</td>
+                                <td>Jacket Black XXL</td>
+                                <td>1</td>
+                                <td><strong>$260</strong></td>
+                            </tr>
+
+                            <tr class="profile__table-row">
+                                <td lass="profile__table-data">07.09.2003</td>
+                                <td>Overalls</td>
+                                <td>5</td>
+                                <td><strong>$6000</strong></td>
+                            </tr>
+
+                            <tr class="profile__table-row">
+                                <td lass="profile__table-data">15.09.2003</td>
+                                <td>Jacket Black XXL</td>
+                                <td>1</td>
+                                <td><strong>$260</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <form action="#" class="profile__user" method="get">
+                    <h2>Your profile</h2>
+                    <div class="profile__form">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            class="profile__input"
+                            required
+                            placeholder="Enter your name"
+                        />
+                    </div>
+                    <div class="profile__form">
+                        <label for="surename">Surename</label>
+                        <input
+                            type="text"
+                            id="surename"
+                            class="profile__input"
+                            required
+                            placeholder="Enter your surname"
+                        />
+                    </div>
+                    <div class="profile__form">
+                        <label for="birthday">Birthday</label>
+                        <input
+                            type="date"
+                            id="birthday"
+                            class="profile__input"
+                            placeholder="Enter your birthday"
+                        />
+                    </div>
+                    <div class="profile__form">
+                        <label>Gender</label>
+                        <div class="profile__status">
+                            <label>
+                                <input type="radio" name="status" />
+                                Male
+                            </label>
+                            <label>
+                                <input type="radio" name="status" />
+                                Female
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="profile__form">
+                        <label for="country">Country</label>
+                        <select
+                            class="profile__input"
+                            name="country"
+                            id="country"
+                        >
+                            <option disabled selected>
+                                Select your country
+                            </option>
+                            <option value="russia">Russia</option>
+                            <option value="italy">Italy</option>
+                        </select>
+                    </div>
+
+                    <div class="profile__form">
+                        <label for="city">City</label>
+                        <select class="profile__input" name="city" id="city">
+                            <option disabled selected>Select your city</option>
+                            <option value="khabarovsk">Khabarovsk</option>
+                            <option value="vladivostok">Vladivostok</option>
+                        </select>
+                    </div>
+
+                    <div class="profile__form">
+                        <label for="mail">E-mail</label>
+                        <input
+                            type="email"
+                            id="mail"
+                            class="profile__input"
+                            placeholder="Enter your e-mail"
+                        />
+                    </div>
+
+                    <div class="profile__form">
+                        <label for="phone">Phone</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            class="profile__input"
+                            pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                            maxlength="12"
+                            placeholder="Enter your phone"
+                        />
+                    </div>
+
+                    <div class="profile__form profile__yourself">
+                        <label for="yourself">About yourself</label>
+                        <input
+                            type="text"
+                            id="yourself"
+                            class="profile__input profile__comment"
+                        />
+                    </div>
+                    <div class="profile__button">
+                        <button class="button">
+                            Save
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+                <div class="footer__content">
+                    <img
+                        src="/img/logo_white.png"
+                        alt="#"
+                        class="footer__img"
+                    />   
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__title"><a href="#">Shop</a></li>
+                            <li class="footer__title"><a href="#">Delivery</a></li>
+                            <li class="footer__title"><a href="#">Service</a></li>
+                            <li class="footer__title"><a href="#">Sitemap</a></li>
+                            <li class="footer__title"><a href="/docs/contacts.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__social">
+                                <a href="#"><img src="/img/fb.svg" alt="" /></a>
+                                <a href="#"
+                                    ><img src="/img/inst.svg" alt=""
+                                /></a>
+                                <a href="#"
+                                    ><img src="/img/pint.svg" alt=""
+                                /></a>
+                                <a href="#"
+                                    ><img src="/img/twitter.svg" alt=""
+                                /></a>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Контакты</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__conteiner">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li><a class="header__items" href="#">Women</a></li>
+                        <li><a class="header__items" href="#">Men</a></li>
+                        <li><a class="header__items" href="#">New</a></li>
+                    </ul>
+                </nav>
+                <a href="/docs/index.html">
+                    <img class="header__logo" src="/img/logo.png" alt="Nimes" />
+                </a>
+                <div class="header__imag">
+                    <a class="header__user" href="/docs/profile-user.html"
+                        >User</a
+                    >
+                    <a href="#" class="header__items-img">
+                        <img src="/img/search.svg" alt=""
+                    /></a>
+                    <a href="#" class="header__items-img">
+                        <img src="/img/cart.svg" alt=""
+                    /></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="contacts">
+                <form action="#" class="contacts__form" method="get">
+                    <fieldset class="contacts__fieldset">
+                        <legend><strong>Contact as</strong></legend>
+                        <div class="contacts__conteiner">
+                        <div class="contacts__form-row">
+                        <label for="username" class="contacts__label"
+                            >Name</label
+                        >
+                        <input
+                            class="contacts__input"
+                            type="text"
+                            id="username"
+                            required
+                            placeholder="Enter your name"
+                        />
+                        </div>
+                        <div class="contacts__form-row">
+                        <label for="usermail" class="contacts__label"
+                            >E-mail</label
+                        >
+                        <input
+                            class="contacts__input"
+                            type="email"
+                            id="usermail"
+                            required
+                            placeholder="Enter your e-mail"
+                        />
+                        </div>
+                        <div class="contacts__form-row">
+                        <label for="userphone" class="contacts__label"
+                            >Phone</label
+                        >
+                        <input
+                            class="contacts__input"
+                            type="tel"
+                            pattern="2[0-9]{3}-[0-9]{3}"
+                            id="userphone"
+                            required
+                            placeholder="Enter your phone"
+                        />
+                        </div>
+                        <div class="contacts__usermessage">
+                            <label for="usermassege" class="contacts__label"
+                                >Your message</label
+                            >
+                            <input
+                                class="contacts__input contacts__message"
+                                type="text"
+                                id="usermassege"
+                            />
+                        </div>
+                        <div class="contacts__button">
+                        <button class="button">Send</button>
+                        </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+                <div class="footer__content">
+                    <img
+                        src="/img/logo_white.png"
+                        alt="#"
+                        class="footer__img"
+                    />
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__title"><a href="#">Shop</a></li>
+                            <li class="footer__title"><a href="#">Delivery</a></li>
+                            <li class="footer__title"><a href="#">Service</a></li>
+                            <li class="footer__title"><a href="#">Sitemap</a></li>
+                            <li class="footer__title"><a href="/docs/contacts.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__social">
+                                <a href="#"><img src="/img/fb.svg" alt="" /></a>
+                                <a href="#"
+                                    ><img src="/img/inst.svg" alt=""
+                                /></a>
+                                <a href="#"
+                                    ><img src="/img/pint.svg" alt=""
+                                /></a>
+                                <a href="#"
+                                    ><img src="/img/twitter.svg" alt=""
+                                /></a>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>
